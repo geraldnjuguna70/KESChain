@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import  url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@theme {
+  --color-primary: #1a73e8;
+  --color-secondary: #34a853;
+  --color-background: #f8f9fa;
+  --color-text: #202124;
+  --color-error: #ea4335;
+  --color-success: #34a853;
+  --color-border: #e0e0e0;
+  --color-hover: #f5f5f5;
+}
+ 

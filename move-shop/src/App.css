@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer components {
+  .App {
+    @apply min-h-screen w-full relative overflow-hidden;
+    @apply bg-gradient-to-br from-purple-950 via-blue-900 to-black;  }
+
+  /* Blur Background */
+  .blur-background {
+    @apply fixed inset-0 z-0;
+  }
+
+  .blur-overlay {
+    @apply absolute inset-0;
+    @apply bg-[url('/src/assets/poster.png')] bg-center bg-cover;
+    @apply blur-lg opacity-40;
+    transform: scale(1.1);
+  }
+
+  .container {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply relative;
+  }
+
+  .content-wrapper {
+    @apply py-8 sm:py-12;
+    @apply backdrop-blur-sm;
+  }
+
+  .image-container {
+    @apply w-full flex justify-center;
+    @apply mb-6;
+  }
+
+  .image-container img {
+    @apply transition-transform duration-300 hover:scale-105;
+    @apply hover:shadow-2xl;
+  }
+
+  .text-container {
+    @apply space-y-2;
+    @apply transition-all duration-300;
+    @apply hover:bg-white/40 dark:hover:bg-black/40;
+  }
+}
+
+/* Animation for background gradient */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App {
+  background-size: 200% 200%;
+  animation: gradientAnimation 15s ease infinite;
+}

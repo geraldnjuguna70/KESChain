@@ -1,0 +1,154 @@
+.burger-builder {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.builder-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.builder-left, .builder-right {
+    flex: 1;
+}
+
+/* Burger Preview Styles */
+.burger-preview {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.burger-bun-top, .burger-bun-bottom {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.burger-layer {
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Ingredient Controls Styles */
+.ingredient-controls {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ingredient-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ingredient-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ingredient-buttons button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.ingredient-buttons button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Order Summary Styles */
+.order-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-summary {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 400px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.price-summary {
+    margin-top: 20px;
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+}
+
+/* Cart Styles */
+.cart {
+    margin-top: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Buttons */
+.order-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.checkout-button {
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
